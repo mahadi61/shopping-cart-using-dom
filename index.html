@@ -16,39 +16,41 @@
   </head>
   <body>
     <!-- navbar start-->
-    <div class="navbar bg-slate-400 shadow-2xl">
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-3xl text-purple-50"
-          >Shopping World</a
-        >
-      </div>
-      <div class="flex-none">
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full">
-              <img src="./images/nav-photo.jpg" />
-            </div>
-          </label>
-          <ul
-            tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+    <div class="relative z-10">
+      <div class="navbar bg-slate-400 shadow-2xl fixed top-0 left-0 right-0">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-3xl text-purple-50"
+            >Shopping World</a
           >
-            <li>
-              <a class="justify-between">
-                Profile
-                <span class="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="./images/nav-photo.jpg" />
+              </div>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <!-- navbar end-->
     <!-- main area start -->
     <main>
-      <section class="flex flex-row">
+      <section class="flex flex-row mt-16">
         <div
           class="w-[65%] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 bg-slate-700 p-3.5"
         >
@@ -202,10 +204,45 @@
           <!-- card end -->
         </div>
         <!-- calculation -->
-        <div class=""><h3>Hello!</h3></div>
+        <div class="w-[35%] p-3 fixed right-0">
+          <!-- calculation title -->
+          <div class="text-center">
+            <h2 class="text-4xl font-bold text-center">
+              Total Product: <span>00</span>
+            </h2>
+          </div>
+          <!-- calculation table start -->
+          <div>
+            <div class="overflow-x-auto">
+              <table class="table table-compact w-full">
+                <thead>
+                  <tr>
+                    <th>NO</th>
+                    <th>Name</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody id="t-body">
+                  <tr>
+                    <th>1</th>
+                    <td>Men shoes</td>
+                    <td>20$</td>
+                    <td>3</td>
+                    <td>60$</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- calculation table end -->
+        </div>
       </section>
     </main>
     <!-- main area end -->
     <!-- js -->
+    <script src="./utilities.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
