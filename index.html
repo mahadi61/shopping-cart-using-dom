@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+
+    <!-- tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- navbar start-->
+    <div class="navbar bg-slate-400 shadow-2xl">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-3xl text-purple-50"
+          >Shopping World</a
+        >
+      </div>
+      <div class="flex-none">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img src="./images/nav-photo.jpg" />
+            </div>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Settings</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end-->
+    <!-- main area start -->
+    <main>
+      <section class="flex flex-row">
+        <div
+          class="w-[65%] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 bg-slate-700 p-3.5"
+        >
+          <!-- card start -->
+          <!-- card 1 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/shoe-1.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Men Shoes</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">20$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/shoe-2.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Men Shoes Black</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">10$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-3.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Comfortable Shoes For Men</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">22$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-4.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Brown Shoes</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">30$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-5.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Show For Men</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">14$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 6-->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-6.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Dark Brown Shoes</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">17$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-7.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Deep Brawn Darby Shoes</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">29$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 8 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-10.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Black Brown Shoes</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">20$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div class="card glass">
+            <figure>
+              <img src="./images/men-shoes-9.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Brown Shoes For Men</h2>
+              <p>Best for your feet!</p>
+              <p>Price: <span class="font-bold">19$</span></p>
+              <p>Quantity:</p>
+              <input type="number" class="text-black p-1" />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card end -->
+        </div>
+        <!-- calculation -->
+        <div class=""><h3>Hello!</h3></div>
+      </section>
+    </main>
+    <!-- main area end -->
+    <!-- js -->
+  </body>
+</html>
